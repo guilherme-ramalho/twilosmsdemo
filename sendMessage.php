@@ -20,14 +20,14 @@
                     //Número do telefone de destino
                     $phoneNumber,
                      array(
-                    'from' => '+17609068468',
-                    'body' => $message
-                )
+                        'from' => '+17609068468',
+                        'body' => $message
+                    )
                 );
+                
+                echo "Mensagem enviada com sucesso para o numero $phoneNumber.<br>";
             } catch(Exception $error) {
                 echo 'Erro: ' . $error->getMessage() . '<br><br>';
-            } finally {
-                echo "Mensgaem enviada para o numero $phoneNumber<br>";
             }
         }
     }
