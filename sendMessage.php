@@ -3,29 +3,28 @@
 
     use Twilio\Rest\Client;
 
-    class sendMessage {
-        function send($phoneNumber, $message) {
+    class Messenger {
+        function sendMessenge($receiver, $sender, $message) {
             try {
                 
 
                 //ID da conta
-                $accountId = 'AC16ed6a0694d21be356904e690c37760c';
+                $accountId = 'AC44ca83f357d24f1410cc77b6b9c5c078';
 
                 //Token de acesso
-                $token = 'f220da22cef16c7994d0736f71c48921';
+                $token = '9552756f8179d1d7327b301b3111f060';
 
                 $client = new Client($accountId, $token);
 
                 $client->messages->create(
-                    //Número do telefone de destino
-                    $phoneNumber,
+                    $receiver,
                      array(
-                        'from' => '+17609068468',
+                        'from' => $sender,
                         'body' => $message
                     )
                 );
                 
-                echo "Mensagem enviada com sucesso para o numero $phoneNumber.<br>";
+                echo "Mensagem enviada com sucesso para o numero $receiver.<br>";
             } catch(Exception $error) {
                 echo 'Erro: ' . $error->getMessage() . '<br><br>';
             }

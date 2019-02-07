@@ -15,8 +15,13 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="phoneNumbers">Números</label>
-                        <textarea class="form-control" rows="10" id="phoneNumbers" name="phoneNumbers" required="true"></textarea>
+                        <label for="senderNumbers">Números Remetentes</label>
+                        <textarea class="form-control" rows="10" id="senderNumbers" name="senderNumbers" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="adresseeNumbers">Números Destinatários</label>
+                        <textarea class="form-control" rows="10" id="adresseeNumbers" name="adresseeNumbers" required></textarea>
                     </div>
 
                     <div class="form-group">

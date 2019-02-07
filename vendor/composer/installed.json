@@ -21,7 +21,7 @@
             "apigen/apigen": "^4.1",
             "phpunit/phpunit": "4.5.*"
         },
-        "time": "2017-07-13 23:57:30",
+        "time": "2017-07-13T23:57:30+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
